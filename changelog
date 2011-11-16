@@ -1,0 +1,6 @@
+2011-11-16
+	使用bitbucket做版本控制：https://bitbucket.org/xufan6/sys
+	修复一堆错误的判断题，大部分是因为合并uniq -w 后面的值太大的原因
+
+2011-11-15
+	手工传上第一版
