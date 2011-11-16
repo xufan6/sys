@@ -25,4 +25,4 @@ sed -i -e 's/&gt;/>/g' *.f
 
 cat *.f |awk '{print $NF}'|grep -v '^[A-D]$'|less
 
-for j in `seq 1 17` ; do for i in `cat $j.f |uniq -w 12 -c |grep "      4"|awk '{print $2}'` ; do grep $i $j.f;done ;done
+n=15; j=1;for i in `uniq -w $n -c $j.f |sort -rn|awk '$1 > 1 {print $2}'`; do grep $i $j.f;done
